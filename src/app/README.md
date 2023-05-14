@@ -1,6 +1,6 @@
 # Componente
 
-    E feito por um arquivo HTML, CSS (Opcional) e TS (Configuracoes e Logica).
+E feito por um arquivo HTML, CSS (Opcional) e TS (Configuracoes e Logica).
 
 ## Ciclo de vida
 
@@ -15,3 +15,19 @@
 * ngAfterViewInit: executado logo após os dados dos filhos e do próprio componente ser inicializado;
 * ngAfterViewChecked: sempre que é detectado uma alteração do conteúdo é chamado esse cara.
 
+# Data Binding
+
+E uma forma de exibir dados em seu componente HTML, nada mais do que trabalhar com dados.
+
+- Interpolation
+- Property Binding
+- Event Binding 
+- Two-way binding
+
+## Interpolation
+
+    Permite incorporar valores dinamicos nos componentes
+
+    HTML: `<h1> {{ variavel }} </h1>`
+
+    CLASS TS: `public title: string = "Bem-vindo";`
