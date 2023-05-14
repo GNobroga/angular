@@ -28,10 +28,10 @@ E uma forma de exibir dados em seu componente HTML, nada mais do que trabalhar c
 
     Permite incorporar valores dinamicos nos componentes
 
-    ````
+    ```
         HTML: `<h1> {{ variavel }} </h1>`
-    ````
+    ```
 
-    ````
+    ```
         CLASS TS: `public title: string = "Bem-vindo";`
-    ````
+    ```
