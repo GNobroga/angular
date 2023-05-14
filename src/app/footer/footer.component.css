@@ -1,0 +1,14 @@
+footer {
+    margin-top: 10px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .79);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
+}
+
+
+div {
+    background-color: red;
+}
