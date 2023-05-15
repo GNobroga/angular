@@ -30,8 +30,45 @@ Permite incorporar valores dinamicos nos componentes
 
 ````
     HTML: `<h1> {{ variavel }} </h1>`
+
+    CLASS TS: `public title: string = "Bem-vindo";`
 ````
 
+## Property Binding
+
+Ajuda a definir valores para propriedades de elementos ou diretivas HTML
+
+Definicao: [property]="variavel/funcao" - Permite trabalhar com os dados vindo da classe TS do Componente
+
 ````
-    CLASS TS: `public title: string = "Bem-vindo";`
+    <button [disabled]="variavel"> Button </button>
+
+    <img [src]="itemImageUrl">
+        // ou
+    <img src="{{itemImageUrl}}">
+````
+
+## Event Binding
+
+E a associao de eventos que permite voce escutar e responder as acoes do usuario, como pressionamentos de tecla, movimentos do mouse, clique e toques.
+
+Definicao: (event)="funcao()"
+
+````
+    <button (click)="funcao()"> Button </button>
+````
+
+## Two-way binding
+
+E a uniao do property-binding com o event-binding
+
+Obs: Use para ouvir eventos e atualizar valores simultaneamente entre os componentes pai e filho.
+
+````
+    HTML:
+        <input [(ngModel)]="nome">
+        <span> {{nome}} </span>
+    
+    Class TS
+        public nome = "Dener";
 ````
